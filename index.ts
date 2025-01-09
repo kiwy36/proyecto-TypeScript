@@ -1,1 +1,1 @@
-console.log('trabajando en ts')
+console.log('trabajando en ts yea')
