@@ -1,1 +1,2 @@
-console.log('hola mundito');
+"use strict";
+console.log('hola mundox');
