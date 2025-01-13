@@ -179,3 +179,22 @@ console.log(cuenta2.consultarSaldo()); // Output: El saldo de Ana es $2100
 
 // Uso del método estático
 console.log(Cuenta.obtenerBanco()); // Output: El banco es Banco Central
+//encapsulamiento y genericos
+class Sorteo<T> {
+    private ticket?: T;
+    constructor(private nombre: string) {}
+    setTicket(ticket: T) {
+        this.ticket = ticket;
+    }
+    getTicket() {
+        return this.ticket;
+    }
+    public sortear(): string {
+        return `para ${this.nombre} el ticket es ${this.ticket}`;
+    }
+}
+
+let sorteo = new Sorteo<string>("pochoclos surtidos");
+sorteo.setTicket("A7");
+console.log(sorteo.sortear());
+
